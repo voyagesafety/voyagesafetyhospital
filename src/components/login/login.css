@@ -1,54 +1,54 @@
-.u-section-1 .u-sheet-1 {
+  .sectionlogin .u-sheet-1 {
     min-height: 515px;
   }
   
-  .u-section-1 .u-text-1 {
+  .sectionlogin .u-text-1 {
     margin: 50px auto 0;
   }
   
-  .u-section-1 .u-line-1 {
+  .sectionlogin .u-line-1 {
     width: 912px;
     height: 3px;
     margin: 23px auto 0;
   }
   
-  .u-section-1 .u-form-1 {
+  .sectionlogin .u-form-1 {
     height: 181px;
     width: 570px;
     margin: 88px auto 60px;
   }
   
-  .u-section-1 .u-form-group-2 {
+  .sectionlogin .u-form-group-2 {
     margin-left: 0;
   }
   
-  .u-section-1 .u-btn-1 {
+  .sectionlogin .u-btn-1 {
     background-image: none;
     border-style: none;
   }
   
   @media (max-width: 991px) {
-    .u-section-1 .u-line-1 {
+    .sectionlogin .u-line-1 {
       width: 720px;
     }
   }
   
   @media (max-width: 767px) {
-    .u-section-1 .u-line-1 {
+    .sectionlogin .u-line-1 {
       width: 540px;
     }
   
-    .u-section-1 .u-form-1 {
+    .sectionlogin .u-form-1 {
       width: 540px;
     }
   }
   
   @media (max-width: 575px) {
-    .u-section-1 .u-line-1 {
+    .sectionlogin .u-line-1 {
       width: 340px;
     }
   
-    .u-section-1 .u-form-1 {
+    .sectionlogin .u-form-1 {
       width: 340px;
     }
   }

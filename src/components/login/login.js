@@ -6,9 +6,9 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <section className="u-clearfix u-section-1" id="sec-96fb">
+        <section className="u-clearfix sectionlogin" id="sec-96fb">
           <div className="u-clearfix u-sheet u-sheet-1">
-            <h3 className="u-text u-text-default u-text-1">กรุณาลงชื่อเข้าใช้</h3>
+            <h3 className="u-text u-text-default u-text-1" >กรุณาลงชื่อเข้าใช้</h3>
               <div className="u-border-1 u-border-grey-dark-1 u-line u-line-horizontal u-line-1" />
                 <div className="u-form u-form-1">
                   <form action="#" method="POST" className="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style={{padding: 10}}>
