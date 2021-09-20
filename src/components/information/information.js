@@ -26,10 +26,10 @@ class Information extends Component {
                   <div className="u-form-group u-form-radiobutton u-form-group-3">
                     <div className="u-form-radio-button-wrapper">
                       <input type="radio" name="radiobutton" defaultValue="เพศชาย" required="required" />
-                      <label className="u-label" htmlFor="radiobutton">เพศชาย</label>
+                      <label className="u-label" style={{color:'#000000'}} htmlFor="radiobutton">เพศชาย</label>
                       <br />
                       <input type="radio" name="radiobutton" defaultValue="เพศหญิง" required="required" />
-                      <label className="u-label" htmlFor="radiobutton">เพศหญิง</label>
+                      <label className="u-label" style={{color:'#000000'}} htmlFor="radiobutton">เพศหญิง</label>
                       <br />
                     </div>
                   </div>
@@ -55,9 +55,9 @@ class Information extends Component {
                         <svg xmlns="http://www.w3.org/2000/svg" width={14} height={12} version={1} className="u-caret"><path fill="currentColor" d="M4 8L0 4h8z" /></svg>
                       </div>
                   </div>
-                  <div className="u-align-right u-form-group u-form-submit">
-                    <a href="#" className="u-btn u-btn-submit u-button-style">ยืนยัน</a>
-                    <input type="submit" defaultValue="submit" className="u-form-control-hidden" />
+                  <div className="u-align-right u-form-group u-form-submit" >
+                    <a href="#" className="u-btn u-btn-submit u-button-style" style={{background:'#0F4A69' , color:'#FFFFFF'}}>ยืนยัน</a>
+                    <input type="submit" defaultValue="submit" className="u-form-control-hidden"/>
                   </div>
                   <div className="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                   <div className="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
