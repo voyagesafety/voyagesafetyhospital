@@ -11,7 +11,7 @@ class Information extends Component {
             <div className="u-container-layout u-container-layout-1">
             <h2 className="u-text u-text-1"><b>กรอกประวัติการฉีดวัคซีน</b>
             </h2>
-              <div className="u-form u-form-1">
+              <div className="u-form u-form-1" >
                 <form action="#" method="POST" className="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style={{padding: 10}}>
                   <input type="hidden" id="siteId" name="siteId" defaultValue={2787330704} />
                   <input type="hidden" id="pageId" name="pageId" defaultValue={84195804} />
@@ -25,10 +25,10 @@ class Information extends Component {
                   </div>
                   <div className="u-form-group u-form-radiobutton u-form-group-3">
                     <div className="u-form-radio-button-wrapper">
-                      <input type="radio" name="radiobutton" defaultValue="เพศชาย" required="required" />
+                      <input type="radio" name="radiobutton" defaultValue="เพศชาย" required="required" />{" "}
                       <label className="u-label" style={{color:'#000000'}} htmlFor="radiobutton">เพศชาย</label>
                       <br />
-                      <input type="radio" name="radiobutton" defaultValue="เพศหญิง" required="required" />
+                      <input type="radio" name="radiobutton" defaultValue="เพศหญิง" required="required" />{" "}
                       <label className="u-label" style={{color:'#000000'}} htmlFor="radiobutton">เพศหญิง</label>
                       <br />
                     </div>
@@ -59,9 +59,6 @@ class Information extends Component {
                     <a href="#" className="u-btn u-btn-submit u-button-style" style={{background:'#0F4A69' , color:'#FFFFFF'}}>ยืนยัน</a>
                     <input type="submit" defaultValue="submit" className="u-form-control-hidden"/>
                   </div>
-                  <div className="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                  <div className="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                  <input type="hidden" defaultValue name="recaptchaResponse" />
                 </form>
               </div>
               <p className="u-text u-text-2">ชื่อจริง :&nbsp;</p>

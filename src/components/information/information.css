@@ -18,6 +18,7 @@
     width: 372px;
     margin: 24px auto 0;
     color: #0F4A69;
+    font-family: 'Prompt';
   }
   
   .u-section-1 .u-form-1 {
@@ -61,45 +62,55 @@
   }
   
   .u-section-1 .u-text-2 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     margin: -583px 483px 0 102px;
     color: #000000;
   }
   
   .u-section-1 .u-text-3 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     margin: 44px auto 0 84px;
     color: #000000;
+    margin-left: 90px;
+    margin-top: 50px;
   }
   
   .u-section-1 .u-text-4 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     margin: 46px auto 0 123px;
     color: #000000;
+    margin-left: 123px;
   }
   
   .u-section-1 .u-text-5 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     margin: 60px auto 0 11px;
     color: #000000;
+    margin-top: 70px;
+    margin-left: 27px;
   }
   
   .u-section-1 .u-text-6 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     margin: 44px auto 0 87px;
     color: #000000;
+    margin-left: 90px;
+    margin-top: 50px;
   }
   
   .u-section-1 .u-text-7 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     margin: 47px auto 0 51px;
     color: #000000;
+    margin-left: 57px;
+    margin-top: 50px;
   }
   
   .u-section-1 .u-text-8 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     margin: 43px auto 0 123px;
     color: #000000;
+    margin-top: 50px;
   }
   
   @media (max-width: 1199px) {
