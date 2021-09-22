@@ -13,7 +13,7 @@ import {
 class App extends Component {
 
   redirectToLogin = () => {
-    return <Redirect to="/Login" />;
+    return <Redirect to="/login" />;
   };
 
   render() {
@@ -21,7 +21,7 @@ class App extends Component {
       <Router>
         <div>   
         <Header/>
-        <Route path="/Login" component={Login} />
+        <Route path="/login" component={Login} />
         <Route path="/Information" component={Information} />
         </div>
       </Router>
