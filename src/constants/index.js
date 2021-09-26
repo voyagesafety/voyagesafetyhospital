@@ -22,6 +22,5 @@ export const NOK = 'nok'
 export const server = {
     LOGIN_URL: `authen/Login`,
     LOGIN_PASSED: `yes`,
-    ADD_INFORMATION1: `vaccination/person/add1`,
-    ADD_INFORMATION2: `vaccination/person/add2`,
+    ADD_INFORMATION: `vaccination/person/addVaccine`,
 }

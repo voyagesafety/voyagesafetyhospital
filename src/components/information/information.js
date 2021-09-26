@@ -66,55 +66,37 @@ class Information extends Component {
     this.setState({errors, [name]: value});
   }
 
-  handleInformationSubmit = (e) => {
+  handleInformationSubmit = async (e) => {
     e.preventDefault();
-    if(this.state.Dose === 1){
     if (validateForm(this.state.errors)) {
       console.info("Valid Form");
       console.log(this.state.errors);
+      if(this.state.Gender !== '' || this.state.Gender.length > 0){
       var data = new FormData();
       data.append("citizenIdInput", this.state.CitizenId);
       data.append("firstNameInput", this.state.FirstName);
       data.append("lastNameInput", this.state.LastName);
       data.append("genderInput", this.state.Gender);
-      data.append("vaccineName1", this.state.VaccineName);
-      data.append("hospitalName1", this.state.LastName);
-      httpClient
-        .post(server.ADD_INFORMATION1, data)
+      data.append("vaccineName", this.state.VaccineName);
+      data.append("dateGetVaccine", this.state.VaccineDate);
+      data.append("hospitalName", "โรงพยาบาลจุฬาลงกรณ์");
+      data.append("Dose", this.state.Dose);
+      await httpClient
+        .post(server.ADD_INFORMATION, data)
         .then(function (response) {
-          console.log(JSON.stringify(response.data));
+          console.log(JSON.stringify(response.data))
         })
         .catch(function (error) {
           console.error(error);
         });
+      }else{
+        this.setState({Error: "โปรดระบุเพศ"})
+        console.log("Invalid gender")
+      }
     } else {
       console.log(this.state.errors);
       console.info("Invalid Form");
     }
-  }else{
-    if (validateForm(this.state.errors)) {
-      console.info("Valid Form");
-      console.log(this.state.errors);
-      var data = new FormData();
-      data.append("citizenIdInput", this.state.CitizenId);
-      data.append("firstNameInput", this.state.FirstName);
-      data.append("lastNameInput", this.state.LastName);
-      data.append("genderInput", this.state.Gender);
-      data.append("vaccineName1", this.state.VaccineName);
-      data.append("hospitalName1", this.state.LastName);
-      httpClient
-        .post(server.ADD_INFORMATION2, data)
-        .then(function (response) {
-          console.log(JSON.stringify(response.data));
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
-    } else {
-      console.log(this.state.errors);
-      console.info("Invalid Form");
-    }
-  }
   };
 
   showError = () => {
@@ -181,7 +163,7 @@ class Information extends Component {
                   </div>
                   <div className="u-form-date u-form-group u-form-group-6">
                     <label className="u-form-control-hidden u-label" />
-                    <input type="date" placeholder="MM/DD/YYYY" name="VaccineDate" className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required />
+                    <input type="date" placeholder="MM/DD/YYYY" name="VaccineDate" className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required onChange={(e) => {this.setState({ VaccineDate: e.target.value})}}/>
                   </div>
                   <div className="u-form-group u-form-select u-form-group-7">
                     <label className="u-form-control-hidden u-label" />
