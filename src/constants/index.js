@@ -12,7 +12,8 @@ export const HTTP_LOGIN_FETCHING = "HTTP_LOGIN_FETCHING";
 export const HTTP_LOGIN_SUCCESS = "HTTP_LOGIN_SUCCESS";
 export const HTTP_LOGIN_FAILED = "HTTP_LOGIN_FAILED";
 
-export const apiUrl = "http://localhost:4000/";
+//export const apiUrl = "http://localhost:4000/";
+export const apiUrl = "https://voyage-hospital-backend.herokuapp.com/";
 
 export const YES = 'YES'
 export const NO = 'NO'
