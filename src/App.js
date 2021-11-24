@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import logo from './logo.svg';
 import './App.css';
 import Login from "./components/login";
 import Information from "./components/information";
+import error from "./components/error";
 import Header from "./components/Header/Header";
 import { server, YES} from "./constants";
 import {
   BrowserRouter as Router,
   Route,
   Redirect,
+  Switch
 } from "react-router-dom";
 
 const isLoggedIn = () => {
@@ -38,11 +39,16 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>   
+        
         <Header/>
+        <Switch>
+        <Route exact path="/">
+              <Redirect to="/login" />
+            </Route>           
         <Route path="/login" component={Login} />
         <SecuredRoute path="/Information" component={Information} />
-        </div>
+        <Route path="*" component={error}/>
+        </Switch>
       </Router>
     );
   }
